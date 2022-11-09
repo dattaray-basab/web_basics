@@ -1,0 +1,35 @@
+<html>
+<body>
+    <form id="form" onsubmit="return setAction(this)">                                       
+            <input name="senderEmail" type="email" placeholder="Email" required>                                       
+            <textarea  name="senderMessage" cols="30" rows="10" placeholder="Message.." required></textarea>
+            <button type="submit">Send message</button>
+    </form>
+    <div id="response"></div>
+
+    <script>
+        function setAction(form) {
+            const url = 'https://example.com/xyz?';
+            const andSign = '&';
+            const senderParameter = 'sender='+form.senderEmail.value;      
+            const bodyParameter = 'body='+form.senderMessage.value;
+            const newUrl = url+senderParameter+andSign+bodyParameter;
+
+            fetch(
+                newUrl,
+                {            
+                    headers: { "Content-Type": "application/json" },            
+                    method: "POST",
+                    body: ""
+                }
+            )
+            .then(data => data.json())
+            .then((json) => {
+                alert(JSON.stringify(json));
+                document.getElementById("form").reset();     
+            });
+            return false;
+        }
+    </script>
+</body>
+</html>
