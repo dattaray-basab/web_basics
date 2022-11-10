@@ -1,6 +1,6 @@
 
 
-async function getCars(subject){
+async function getCars(){
     fetch("http://localhost:3005/cars", {
 
         // Adding method type
