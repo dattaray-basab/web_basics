@@ -1,14 +1,6 @@
 
-//async function demo(subject){
-//   const URL='https://www.reddit.com/r/' + subject + '/top/.json?limit=3';
-//   const Res= fetch(URL);
-//   const response= await Res;
-//   const json= await response.json();
-//   console.log(json);
-//   return json
-//}
 
-async function get_cars(subject){
+async function getCars(subject){
     fetch("http://localhost:3005/cars", {
 
         // Adding method type
@@ -37,7 +29,7 @@ async function postCar(){
 
         // Adding body or contents to send
         body: JSON.stringify({
-            "id": 3,
+            "id": 13,
             "year": 1979,
             "make": "cheyy",
             "model": "pinto",
@@ -50,29 +42,20 @@ async function postCar(){
         }
     })
         .then(response => response.json())
-        .then(json => console.log(json));
+        .then(
+            json => {
+                console.log(json);
+                changeStatus('added new car !!!');
+            })
+        .catch(
+            err => console.log(err)
+        )
 
-
-    changeStatus("added new car!!!");
-    return json
 }
 
 const changeStatus = (msg) => {
-  document.getElementById("status").innerHTML = msg;
+  // document.getElementById("status").innerHTML = msg;
 }
 
-// asyncCall = async () => {
-//     try {
-//         console.log("calling");
-//         const result = await post_car('javascript');
-//         console.log(result);
-//         changeStatus("resolved!!!");
-//     } catch(error) {
-//         console.log("error")
-//         changeStatus("Error!!!");
-//     }
-//
-// }
 
-
-postCar();
+// postCar();
