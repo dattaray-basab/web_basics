@@ -1,0 +1,27 @@
+<script type="text/javascript" src="cars.js"></script>
+<div>
+
+
+
+    <label>
+        "List of Cars"
+    </label>
+    <div id="list"></div>
+
+
+    <script>
+        function extracted(list) {
+
+            // Get the app element
+            var app = document.querySelector('#list');
+
+            // Create markup
+            app.innerHTML = '<ul>' + list.map(function (wizard) {
+                return '<li>' + wizard + '</li>';
+            }).join('') + '</ul>';
+    }
+    var list = ['VW Beetle', 'Telsa', 'Accord'];
+    extracted(list);
+    </script>
+
+</div>
