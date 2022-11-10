@@ -29,7 +29,7 @@ async function get_cars(subject){
     return json
 }
 
-async function post_car(subject){
+async function postCar(){
     fetch("http://localhost:3005/cars", {
 
         // Adding method type
@@ -37,10 +37,10 @@ async function post_car(subject){
 
         // Adding body or contents to send
         body: JSON.stringify({
-            "id": 2,
-            "year": 1999,
-            "make": "honda",
-            "model": "civic",
+            "id": 3,
+            "year": 1979,
+            "make": "cheyy",
+            "model": "pinto",
             "owner_id": 1
         }),
 
@@ -49,31 +49,30 @@ async function post_car(subject){
             "Content-type": "application/json; charset=UTF-8"
         }
     })
-
-        // Converting to JSON
         .then(response => response.json())
-
-        // Displaying results to console
         .then(json => console.log(json));
 
+
+    changeStatus("added new car!!!");
     return json
 }
+
 const changeStatus = (msg) => {
   document.getElementById("status").innerHTML = msg;
 }
 
-asyncCall = async () => {
-    try {
-        console.log("calling");
-        const result = await post_car('javascript');
-        console.log(result);
-        changeStatus("resolved!!!");
-    } catch(error) {
-        console.log("error")
-        changeStatus("Error!!!");
-    }
+// asyncCall = async () => {
+//     try {
+//         console.log("calling");
+//         const result = await post_car('javascript');
+//         console.log(result);
+//         changeStatus("resolved!!!");
+//     } catch(error) {
+//         console.log("error")
+//         changeStatus("Error!!!");
+//     }
+//
+// }
 
-}
 
-
-asyncCall();
+postCar();
