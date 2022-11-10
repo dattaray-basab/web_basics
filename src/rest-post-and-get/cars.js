@@ -16,9 +16,13 @@ async function getCars(){
     .then(response => response.json())
 
     // Displaying results to console
-    .then(json => console.log(json));
+    .then(json => console.log(json))
+    .catch(
+        err => console.log(err)
+    )
 
-    return json
+
+
 }
 
 async function postCar(car_id){
