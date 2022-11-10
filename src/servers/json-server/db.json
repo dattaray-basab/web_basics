@@ -1,0 +1,95 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "basab",
+      "born": 1956
+    }
+  ],
+  "cars": [
+    {
+      "id": 1,
+      "year": 1999,
+      "make": "toyota",
+      "model": "tercel",
+      "owner_id": 1
+    },
+    {
+      "id": 2,
+      "year": 1999,
+      "make": "honda",
+      "model": "civic",
+      "owner_id": 1
+    },
+    {
+      "id": 3,
+      "year": 1979,
+      "make": "cheyy",
+      "model": "pinto",
+      "owner_id": 1
+    },
+    {
+      "id": 4,
+      "year": 1979,
+      "make": "cheyy",
+      "model": "pinto",
+      "owner_id": 1
+    },
+    {
+      "id": 5,
+      "year": 1979,
+      "make": "cheyy",
+      "model": "pinto",
+      "owner_id": 1
+    },
+    {
+      "id": 6,
+      "year": 1979,
+      "make": "cheyy",
+      "model": "pinto",
+      "owner_id": 1
+    },
+    {
+      "id": 7,
+      "year": 1979,
+      "make": "cheyy",
+      "model": "pinto",
+      "owner_id": 1
+    },
+    {
+      "id": 8,
+      "year": 1979,
+      "make": "cheyy",
+      "model": "pinto",
+      "owner_id": 1
+    },
+    {
+      "id": 9,
+      "year": 1979,
+      "make": "cheyy",
+      "model": "pinto",
+      "owner_id": 1
+    },
+    {
+      "id": 11,
+      "year": 1979,
+      "make": "cheyy",
+      "model": "pinto",
+      "owner_id": 1
+    },
+    {
+      "id": 12,
+      "year": 1979,
+      "make": "cheyy",
+      "model": "pinto",
+      "owner_id": 1
+    },
+    {
+      "id": 13,
+      "year": 1979,
+      "make": "cheyy",
+      "model": "pinto",
+      "owner_id": 1
+    }
+  ]
+}

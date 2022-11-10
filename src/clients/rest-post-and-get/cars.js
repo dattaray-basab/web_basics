@@ -1,4 +1,13 @@
 
+fn_populate = (container_id, list) => {
+
+    const app = document.getElementById(container_id)
+
+    // Create markup
+    app.innerHTML = '<ul>' + list.map(function (element) {
+        return '<li>' + element + '</li>';
+    }).join('') + '</ul>';
+}
 
 async function getCars(){
     fetch("http://localhost:3005/cars", {
@@ -16,7 +25,10 @@ async function getCars(){
     .then(response => response.json())
 
     // Displaying results to console
-    .then(json => console.log(json))
+    .then(json => {
+        console.log(json);
+
+    })
     .catch(
         err => console.log(err)
     )
@@ -57,7 +69,7 @@ async function postCar(car_id){
 }
 
 const changeStatus = (msg) => {
-  // document.getElementById("status").innerHTML = msg;
+  document.getElementById("status").innerHTML = msg;
 }
 
 

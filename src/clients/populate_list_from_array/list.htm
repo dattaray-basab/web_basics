@@ -6,22 +6,22 @@
     <label>
         "List of Cars"
     </label>
-    <div id="container_id"></div>
+    <div id="id_car_list"></div>
 
 
     <script>
-        function fn_populate(list) {
+        fn_populate = (container_id, list) => {
 
-            // Get the app element
-            var app = document.querySelector('#container_id');
+            const app = document.getElementById(container_id)
 
             // Create markup
             app.innerHTML = '<ul>' + list.map(function (element) {
                 return '<li>' + element + '</li>';
             }).join('') + '</ul>';
-    }
-    var list = ['VW Beetle', 'Telsa', 'Accord'];
-    fn_populate(list);
+        }
+        var list = ['VW Beetle', 'Saab', 'Accord'];
+        fn_populate("id_car_list", list);
+
     </script>
 
 </div>
