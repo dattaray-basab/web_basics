@@ -8,18 +8,11 @@
 //   return json
 //}
 
-async function demo2(subject){
-    fetch("https://jsonplaceholder.typicode.com/posts", {
+async function get_cars(subject){
+    fetch("http://localhost:3005/cars", {
 
         // Adding method type
-        method: "POST",
-
-        // Adding body or contents to send
-        body: JSON.stringify({
-            title: "foo",
-            body: "bar",
-            userId: 1
-        }),
+        method: "GET",
 
         // Adding headers to the request
         headers: {
@@ -36,7 +29,35 @@ async function demo2(subject){
     return json
 }
 
+async function post_car(subject){
+    fetch("http://localhost:3005/cars", {
 
+        // Adding method type
+        method: "POST",
+
+        // Adding body or contents to send
+        body: JSON.stringify({
+            "id": 2,
+            "year": 1999,
+            "make": "honda",
+            "model": "civic",
+            "owner_id": 1
+        }),
+
+        // Adding headers to the request
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
+    })
+
+        // Converting to JSON
+        .then(response => response.json())
+
+        // Displaying results to console
+        .then(json => console.log(json));
+
+    return json
+}
 const changeStatus = (msg) => {
   document.getElementById("status").innerHTML = msg;
 }
@@ -44,7 +65,7 @@ const changeStatus = (msg) => {
 asyncCall = async () => {
     try {
         console.log("calling");
-        const result = await demo2('javascript');
+        const result = await post_car('javascript');
         console.log(result);
         changeStatus("resolved!!!");
     } catch(error) {
