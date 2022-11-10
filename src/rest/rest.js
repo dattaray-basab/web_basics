@@ -21,3 +21,5 @@ const asyncPostCall = async () => {
           } 
     }
 
+asyncPostCall();
+
