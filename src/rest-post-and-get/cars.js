@@ -21,7 +21,7 @@ async function getCars(subject){
     return json
 }
 
-async function postCar(){
+async function postCar(car_id){
     fetch("http://localhost:3005/cars", {
 
         // Adding method type
@@ -29,7 +29,7 @@ async function postCar(){
 
         // Adding body or contents to send
         body: JSON.stringify({
-            "id": 13,
+            "id": car_id,
             "year": 1979,
             "make": "cheyy",
             "model": "pinto",
@@ -50,7 +50,6 @@ async function postCar(){
         .catch(
             err => console.log(err)
         )
-
 }
 
 const changeStatus = (msg) => {
