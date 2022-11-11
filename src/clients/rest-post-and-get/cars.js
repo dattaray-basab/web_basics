@@ -1,7 +1,19 @@
-PROTOCOL = 'http://'
-DOMAIN = 'localhost'
-PORT = ':3005'
-PATH = "/cars"
+const CROSS_ADDRESS = true
+
+// original address
+var PROTOCOL = 'http://'
+var DOMAIN = 'localhost'
+var PORT = ':3005'
+var PATH = "/cars"
+
+if (CROSS_ADDRESS) {
+    // cross address
+    PROTOCOL = 'http://'
+    DOMAIN = '127.0.0.1'
+    PORT = ':5000'
+    PATH = "/cars"
+}
+
 
 url = PROTOCOL + DOMAIN + PORT
 href = url + PATH
