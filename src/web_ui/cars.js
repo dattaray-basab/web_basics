@@ -1,3 +1,16 @@
+PROTOCOL = 'http://'
+DOMAIN = '127.0.0.1'
+PORT = ':5000'
+PATH = "/cars"
+
+// PROTOCOL = 'http://'
+// DOMAIN = 'localhost'
+// PORT = ':3005'
+// PATH = "/cars"
+
+url = PROTOCOL + DOMAIN + PORT
+href = url + PATH
+
 function fn_createGuid()
 {
     return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
@@ -17,19 +30,26 @@ fn_populate = (container_id, list) => {
 }
 
 async function getCars(){
-    fetch("http://localhost:3005/cars", {
+    fetch(href, {
 
         // Adding method type
         method: "GET",
 
         // Adding headers to the request
-        headers: {
-            "Content-type": "application/json; charset=UTF-8"
-        }
+       headers: {
+           "Accept": "application/json", "Content-type": "application/json"
+       }
+//         headers = {
+//             "Accept": "application/json",
+//             "Content-Type": "application/json",
+//         }
     })
 
     // Converting to JSON
-    .then(response => response.json())
+    .then(response => {
+        response.json();
+        console.log(response)
+    })
 
     // Displaying results to console
     .then(json => {
@@ -46,7 +66,7 @@ async function getCars(){
 async function postCar(){
     // d = new Date().getTime();
     id = fn_createGuid()
-    fetch("http://localhost:3005/cars", {
+    fetch(href, {
 
         // Adding method type
         method: "POST",
@@ -71,11 +91,8 @@ async function postCar(){
                 console.log(json);
                 changeStatus('added new car !!!');
             })
-        .catch( err =>
-            {
-                console.log(err);
-            }
-
+        .catch(
+            err => console.log(err)
         )
 }
 
