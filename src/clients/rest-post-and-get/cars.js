@@ -1,3 +1,10 @@
+function fn_createGuid()
+{
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = Math.random()*16|0, v = c === 'x' ? r : (r&0x3|0x8);
+        return v.toString(16);
+    });
+}
 
 fn_populate = (container_id, list) => {
 
@@ -5,7 +12,7 @@ fn_populate = (container_id, list) => {
 
     // Create markup
     app.innerHTML = '<ul>' + list.map(function (element) {
-        return '<li>' + element + '</li>';
+        return '<li>' + element.id + '</li>';
     }).join('') + '</ul>';
 }
 
@@ -27,17 +34,18 @@ async function getCars(){
     // Displaying results to console
     .then(json => {
         console.log(json);
+        fn_populate('id_cars', json )
 
     })
     .catch(
         err => console.log(err)
     )
 
-
-
 }
 
-async function postCar(car_id){
+async function postCar(id){
+    // d = new Date().getTime();
+    id = fn_createGuid()
     fetch("http://localhost:3005/cars", {
 
         // Adding method type
@@ -45,7 +53,7 @@ async function postCar(car_id){
 
         // Adding body or contents to send
         body: JSON.stringify({
-            "id": car_id,
+            "id": id,
             "year": 1979,
             "make": "cheyy",
             "model": "pinto",
