@@ -43,7 +43,7 @@ async function getCars(){
 
 }
 
-async function postCar(id){
+async function postCar(){
     // d = new Date().getTime();
     id = fn_createGuid()
     fetch("http://localhost:3005/cars", {
