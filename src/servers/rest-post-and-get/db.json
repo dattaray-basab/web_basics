@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "basab",
+      "born": 1956
+    }
+  ],
+  "cars": [
+    {
+      "id": "df593219-db40-42e7-a5a6-1b5684771a96",
+      "year": 1979,
+      "make": "cheyy",
+      "model": "pinto",
+      "owner_id": 1
+    },
+    {
+      "id": "ef535688-2081-4a46-8eb4-81ca1b57ce42",
+      "year": 1979,
+      "make": "cheyy",
+      "model": "pinto",
+      "owner_id": 1
+    },
+    {
+      "id": "302d559a-e2a8-4881-b276-fc1778321cb7",
+      "year": 1979,
+      "make": "cheyy",
+      "model": "pinto",
+      "owner_id": 1
+    },
+    {
+      "id": "1167aef1-afd0-42d7-84c3-7f10e993cbc0",
+      "year": 1979,
+      "make": "cheyy",
+      "model": "pinto",
+      "owner_id": 1
+    },
+    {
+      "id": "e1866739-b7d5-488f-a9b3-ce8b7a991b5e",
+      "year": 1979,
+      "make": "cheyy",
+      "model": "pinto",
+      "owner_id": 1
+    },
+    {
+      "id": "0c542ead-2281-47a8-b774-e8e0f9746eee",
+      "year": 1979,
+      "make": "cheyy",
+      "model": "pinto",
+      "owner_id": 1
+    },
+    {
+      "id": "3fd6eb2b-1fc9-46d4-8f3d-cd3e1c33e9dd",
+      "year": 1979,
+      "make": "cheyy",
+      "model": "pinto",
+      "owner_id": 1
+    },
+    {
+      "id": "18cdd0ac-aef7-42e1-983e-8841ee39f94f",
+      "year": 1979,
+      "make": "cheyy",
+      "model": "pinto",
+      "owner_id": 1
+    }
+  ]
+}
