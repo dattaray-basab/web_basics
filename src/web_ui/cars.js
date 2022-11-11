@@ -3,10 +3,10 @@ DOMAIN = '127.0.0.1'
 PORT = ':5000'
 PATH = "/cars"
 
-// PROTOCOL = 'http://'
-// DOMAIN = 'localhost'
-// PORT = ':3005'
-// PATH = "/cars"
+PROTOCOL = 'http://'
+DOMAIN = 'localhost'
+PORT = ':3005'
+PATH = "/cars"
 
 url = PROTOCOL + DOMAIN + PORT
 href = url + PATH

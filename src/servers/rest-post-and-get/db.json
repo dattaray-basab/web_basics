@@ -8,140 +8,35 @@
   ],
   "cars": [
     {
-      "id": "df593219-db40-42e7-a5a6-1b5684771a96",
-      "year": 1979,
-      "make": "cheyy",
-      "model": "pinto",
-      "owner_id": 1
-    },
-    {
-      "id": "ef535688-2081-4a46-8eb4-81ca1b57ce42",
-      "year": 1979,
-      "make": "cheyy",
-      "model": "pinto",
-      "owner_id": 1
-    },
-    {
-      "id": "302d559a-e2a8-4881-b276-fc1778321cb7",
-      "year": 1979,
-      "make": "cheyy",
-      "model": "pinto",
-      "owner_id": 1
-    },
-    {
-      "id": "1167aef1-afd0-42d7-84c3-7f10e993cbc0",
-      "year": 1979,
-      "make": "cheyy",
-      "model": "pinto",
-      "owner_id": 1
-    },
-    {
-      "id": "e1866739-b7d5-488f-a9b3-ce8b7a991b5e",
-      "year": 1979,
-      "make": "cheyy",
-      "model": "pinto",
-      "owner_id": 1
-    },
-    {
-      "id": "0c542ead-2281-47a8-b774-e8e0f9746eee",
-      "year": 1979,
-      "make": "cheyy",
-      "model": "pinto",
-      "owner_id": 1
-    },
-    {
-      "id": "3fd6eb2b-1fc9-46d4-8f3d-cd3e1c33e9dd",
-      "year": 1979,
-      "make": "cheyy",
-      "model": "pinto",
-      "owner_id": 1
-    },
-    {
-      "id": "18cdd0ac-aef7-42e1-983e-8841ee39f94f",
-      "year": 1979,
-      "make": "cheyy",
-      "model": "pinto",
-      "owner_id": 1
-    },
-    {
-      "id": "0d0b0cf1-0c81-4cb5-8203-fb8d095fd8e5",
-      "year": 1979,
-      "make": "cheyy",
-      "model": "pinto",
-      "owner_id": 1
-    },
-    {
-      "id": "b6b96b42-d084-4145-989e-6692216bcdaa",
-      "year": 1979,
-      "make": "cheyy",
-      "model": "pinto",
-      "owner_id": 1
-    },
-    {
-      "id": "cf5b6b3c-3306-4ce3-8f40-6c169ad65a98",
-      "year": 1979,
-      "make": "cheyy",
-      "model": "pinto",
-      "owner_id": 1
-    },
-    {
-      "id": "eee3a7cf-67fc-4261-8c0d-3cf32640260f",
-      "year": 1979,
-      "make": "cheyy",
-      "model": "pinto",
-      "owner_id": 1
-    },
-    {
-      "id": "b2a66de8-dd7d-4776-87dd-d86e9d32b5f8",
-      "year": 1979,
-      "make": "cheyy",
-      "model": "pinto",
-      "owner_id": 1
-    },
-    {
-      "id": "d16545f4-bfb3-4604-9879-85cc66fdea6a",
-      "year": 1979,
-      "make": "cheyy",
-      "model": "pinto",
-      "owner_id": 1
-    },
-    {
-      "id": "7424585f-9178-4d5b-bd30-3192e18ed8d6",
-      "year": 1979,
-      "make": "cheyy",
-      "model": "pinto",
-      "owner_id": 1
-    },
-    {
-      "id": "90138ebf-6288-4ee0-8299-01ba17daa71b",
-      "year": 1979,
-      "make": "cheyy",
-      "model": "pinto",
-      "owner_id": 1
-    },
-    {
-      "id": "0383b669-58f8-44aa-8a91-0a13a31637c2",
-      "year": 1979,
-      "make": "cheyy",
-      "model": "pinto",
-      "owner_id": 1
-    },
-    {
-      "id": "18c77ee4-860f-412a-84c0-dcbb06b36093",
-      "year": 1979,
-      "make": "cheyy",
-      "model": "pinto",
-      "owner_id": 1
-    },
-    {
-      "id": "57bacccf-19b7-46e0-b14a-bcdd31486dfa",
-      "year": 1979,
-      "make": "cheyy",
-      "model": "pinto",
-      "owner_id": 1
-    },
-    {
       "id": "8cd8be5d-32ad-471b-a11c-359b767c5209",
+      "year": 1979,
+      "make": "cheyy",
+      "model": "pinto",
+      "owner_id": 1
+    },
+    {
+      "id": "6a8c5c54-95d4-4758-835b-89a1c33caf7f",
+      "year": 1979,
+      "make": "cheyy",
+      "model": "pinto",
+      "owner_id": 1
+    },
+    {
+      "id": "4efc5e61-9a18-4d54-bc06-b2a039c1ca5e",
+      "year": 1979,
+      "make": "cheyy",
+      "model": "pinto",
+      "owner_id": 1
+    },
+    {
+      "id": "e104b3f4-89cf-4cc0-abb1-73f003dc0fab",
+      "year": 1979,
+      "make": "cheyy",
+      "model": "pinto",
+      "owner_id": 1
+    },
+    {
+      "id": "8c09376c-79a7-4c75-998e-ca7ee99a7236",
       "year": 1979,
       "make": "cheyy",
       "model": "pinto",
